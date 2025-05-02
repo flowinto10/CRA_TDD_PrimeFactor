@@ -1,5 +1,10 @@
-class Prime {
+#include <vector>
+
+class PrimeFactors {
 	public:
-		//гогого
+		std::vector<int> of(int prime)
+		{
+			return { };
+		}
 
 };

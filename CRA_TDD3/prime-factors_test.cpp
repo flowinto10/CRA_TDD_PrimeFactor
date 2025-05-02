@@ -1,10 +1,11 @@
 ﻿#include "gmock/gmock.h"
 #include "prime-factors.cpp"
 
-TEST(TS, TC1)
+using std::vector;
+
+TEST(PrimeFactors, Of1)
 {
-	EXPECT_EQ(1, 1); // test 테스트
-	EXPECT_EQ(1, 1); // test 테스트
-	EXPECT_EQ(1, 1); // test 테스트
-	EXPECT_EQ(1, 1); // test 테스트
+	PrimeFactors prime_factor;
+	std::vector<int> expected = {};
+	EXPECT_EQ(expected, prime_factor.of(1)); // test 테스트
 }
